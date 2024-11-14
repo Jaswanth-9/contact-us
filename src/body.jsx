@@ -1,5 +1,7 @@
 import "./body.css";
 import Button from "./button";
+import { MdMessage } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Body() {
   return (
@@ -13,7 +15,8 @@ export default function Body() {
       </div>
       <div className="body_main">
         <div>
-          <Button />
+          <Button text="CHAT" icon={<MdMessage />} />
+          <Button text="CALL" icon={<FaPhoneAlt />} />
           <form></form>
         </div>
         <img src="/images/contact_us.png" alt="Contact Us Logo" />

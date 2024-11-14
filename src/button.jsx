@@ -1,11 +1,11 @@
-import { MdMessage } from "react-icons/md";
+
 import "./button.css";
 
-export default function Button() {
+export default function Button(props) {
   return (
-    <button>
-        <MdMessage/>
-        Button
+    <button className = "button">
+        {props.icon}
+        {props.text}
     </button>
   );
 }
