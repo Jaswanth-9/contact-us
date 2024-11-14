@@ -3,8 +3,20 @@ import Button from "./button";
 import { MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { useState } from "react";
 
 export default function Body() {
+    const[name, setName] = useState("");
+    const[email, setEmail] = useState("");
+    const[text, setText] = useState("");
+
+    const onSubmit = (e)=> {
+        e.preventDefault();
+        setName(e.target[0].value);
+        setEmail(e.target[1].value);
+        setText(e.target[2].value);
+    }
+
   return (
     <div className="body">
       <div className="body_desc">
@@ -21,7 +33,7 @@ export default function Body() {
             <Button text="CALL" icon={<FaPhoneAlt />} />
           </div>
           <Button isOutline={true} text="EMAIL" icon={<HiMail />} />
-          <form>
+          <form onSubmit = {onSubmit}>
             <div className="body_form">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" />
@@ -32,12 +44,15 @@ export default function Body() {
             </div>
             <div className="body_form">
               <label htmlFor="text">Text</label>
-              <textarea name="text" rows = "8"/>
+              <textarea name="text" rows = "5"/>
             </div>
             <div style={{display : "flex", justifyContent : "end"}}>
             <Button text="Submit" />
             </div>
           </form>
+          <div>
+            { name + ": " + email +": "+text}
+          </div>
         </div>
         <img src="/images/contact_us.png" alt="Contact Us Logo" />
       </div>

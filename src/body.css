@@ -1,9 +1,11 @@
 .body {
-  margin: 0.5rem 4rem;
+  margin: 0 4rem;
 }
 
 .body_main {
   display: flex;
+  padding : 1rem 3rem 0 3rem;
+  justify-content: space-between;
 }
 
 .body_buttons {
@@ -26,6 +28,10 @@
 .body_form input{
     height : 1.5rem;
     padding : 0.2rem 0.3rem;
+}
+
+.body_form textarea{
+  padding : 0.8rem 0.3rem;
 }
 
 .body_form label{
