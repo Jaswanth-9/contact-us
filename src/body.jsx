@@ -20,8 +20,24 @@ export default function Body() {
             <Button text="CHAT" icon={<MdMessage />} />
             <Button text="CALL" icon={<FaPhoneAlt />} />
           </div>
-          <Button isOutline = {true} text="EMAIL" icon={<HiMail />} />
-          <form></form>
+          <Button isOutline={true} text="EMAIL" icon={<HiMail />} />
+          <form>
+            <div className="body_form">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" />
+            </div>
+            <div className="body_form">
+              <label htmlFor="email">Mail ID</label>
+              <input type="email" name="email" />
+            </div>
+            <div className="body_form">
+              <label htmlFor="text">Text</label>
+              <textarea name="text" />
+            </div>
+            <div style={{display : "flex", justifyContent : "end"}}>
+            <Button text="Submit" />
+            </div>
+          </form>
         </div>
         <img src="/images/contact_us.png" alt="Contact Us Logo" />
       </div>

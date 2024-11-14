@@ -8,10 +8,30 @@
 
 .body_buttons {
   display: flex;
-  gap : 1rem;
+  justify-content: space-between;
 }
 
 .body_main img {
   height: 25rem;
   width: auto;
+}
+
+.body_form{
+    display : flex;
+    flex-direction: column;
+    position : relative;
+    margin : 1rem 0;
+}
+
+.body_form input{
+    height : 1.5rem;
+    padding : 0.2rem 0.3rem;
+}
+
+.body_form label{
+    position : absolute;
+    top : -0.8rem;
+    left : 0.8rem;
+    background-color: white;
+    padding : 0 0.3rem;
 }
