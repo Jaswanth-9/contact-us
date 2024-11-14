@@ -1,12 +1,17 @@
-.body{
-    margin : 0.5rem 4rem;
+.body {
+  margin: 0.5rem 4rem;
 }
 
-.body_main{
-    display : flex;
+.body_main {
+  display: flex;
 }
 
-.body_main img{
-    height : 25rem;
-    width : auto;
+.body_buttons {
+  display: flex;
+  gap : 1rem;
+}
+
+.body_main img {
+  height: 25rem;
+  width: auto;
 }

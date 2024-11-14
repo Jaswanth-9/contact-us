@@ -1,12 +1,25 @@
-.button{
-    padding : 0.2rem 1rem;
-    background-color: black;
-    color : white;
-    border-radius: 0.2rem;
-    display : flex;
-    align-items: center;
-    gap : 0.3rem;
-    font-size: 1rem;
-    width: 10rem;
-    justify-content: center;
+.button {
+  padding: 0.2rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  width: 10rem;
+  justify-content: center;
+}
+
+.button_outline {
+  padding: 0.2rem 1rem;
+  border: 0.2rem solid black;
+  color: black;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  width: 10rem;
+  justify-content: center;
 }

@@ -2,6 +2,7 @@ import "./body.css";
 import Button from "./button";
 import { MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 
 export default function Body() {
   return (
@@ -15,8 +16,11 @@ export default function Body() {
       </div>
       <div className="body_main">
         <div>
-          <Button text="CHAT" icon={<MdMessage />} />
-          <Button text="CALL" icon={<FaPhoneAlt />} />
+          <div className="body_buttons">
+            <Button text="CHAT" icon={<MdMessage />} />
+            <Button text="CALL" icon={<FaPhoneAlt />} />
+          </div>
+          <Button isOutline = {true} text="EMAIL" icon={<HiMail />} />
           <form></form>
         </div>
         <img src="/images/contact_us.png" alt="Contact Us Logo" />
