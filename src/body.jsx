@@ -32,7 +32,7 @@ export default function Body() {
             </div>
             <div className="body_form">
               <label htmlFor="text">Text</label>
-              <textarea name="text" />
+              <textarea name="text" rows = "8"/>
             </div>
             <div style={{display : "flex", justifyContent : "end"}}>
             <Button text="Submit" />
