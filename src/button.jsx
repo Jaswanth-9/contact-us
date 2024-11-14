@@ -1,10 +1,11 @@
+import { MdMessage } from "react-icons/md";
 import "./button.css";
 
 export default function Button() {
   return (
-    <div>
-      text
-      vet
-    </div>
+    <button>
+        <MdMessage/>
+        Button
+    </button>
   );
 }

@@ -1,4 +1,5 @@
 import "./body.css";
+import Button from "./button";
 
 export default function Body() {
   return (
@@ -12,6 +13,7 @@ export default function Body() {
       </div>
       <div className="body_main">
         <div>
+          <Button />
           <form></form>
         </div>
         <img src="/images/contact_us.png" alt="Contact Us Logo" />
